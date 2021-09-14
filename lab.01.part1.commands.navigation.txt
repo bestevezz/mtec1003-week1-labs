@@ -65,11 +65,8 @@ $ ls -l Documents<ENTER>
 
 Copy and paste the first *two lines* of output below.
 ----------
-
-
-
-
-
+Adobe/
+'Adobe After Effects Auto-Save'/
 
 ==========
 3.  Type:
@@ -78,12 +75,8 @@ $ ls -a Documents
 
 Copy and paste the first *two lines* of output below.
 ----------
-.			Adobe			IanniX			OM			Zwift
-..			CU			Ircam			Pd			iZotope
-
-
-
-
+ ./                                             HD79EstevezHW3.docx
+ ../                                            HD79EstevezHW3.pdf
 
 ==========
 4.  Type:
@@ -94,47 +87,26 @@ Copy and paste the output below.
 ----------
 ls: doesnotexist: No such file or directory
 
-
-
-
-
 ==========
 5.  What key do I press to go to the previous command?
 ----------
-the UP arrow on my keyboard 
-
-
-
-
+the up arrow on our keyboards
 
 ==========
 6.  Name two flags/options that we used in this exercise.
 ----------
-
--l (list the LONG form of all the files)
--a (list ALL files, including the hidden ones!)
-
-
-
+-l 
+-a 
 
 ==========
 7.  What was the main command that we used throughout this exercise?
 ----------
-ls (list all them files!! yeehaw!)
-
-
-
-
+ls 
 
 ==========
 8.  What's one an argument that we've so far passed to a command?
 ----------
-doesnotexist
 Documents
-
-
-
-
 
 ==========
 9.  Type:
@@ -143,11 +115,7 @@ $ foo<ENTER>
 
 Copy and paste the output below.
 ----------
--bash: foo: command not found
-
-
-
-
+bash: foo: command not found
 
 ==========
 10.  Type:
@@ -158,10 +126,6 @@ Copy and paste the output below.
 ----------
 -bash: foo: command not found
 
-
-
-
-
 ==========
 11.  In the following line....
 
@@ -170,12 +134,9 @@ $ ls -a Desktop
 Identify the command, flag, argument, and prompt:
 ----------
 command: ls
-option/flag: -a
+flag: -a
 argument: Desktop
-prompt: $ (The prompt is the symbol that tells you the computer is not currently running a command and is "ready" for your input.)
-
-(Sometimes you may see a % symbol instead of $.)
-
+prompt: $ 
 
 
 Lab 1 / Part 2 - Navigating the File System
@@ -190,20 +151,12 @@ Follow the instructions line-by-line.
 ==========
 12. Open a new terminal window. Create a directory called mtec1003. What command did you use?
 ----------
-
 mkdir
-
-
-
 
 ==========
 13. Change your directory so that you're in mtec1003. What command did you use?
 ----------
-
 cd 
-
-
-
 
 ==========
 14. Type:
@@ -216,11 +169,7 @@ If it doesn't ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-/Users/louisgoldford2020/mtec1003
-
-
-
-
+/c/Users/beste/mtec1003
 
 ==========
 15. Type:
@@ -230,11 +179,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-animals
-
-
-
-
+animals/
 
 ==========
 16. Type:
@@ -244,11 +189,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-animals	food
-
-
-
-
+animals/	food/
 
 ==========
 17. Type:
@@ -258,11 +199,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-animals	foo	food
-
-
-(-p flag is RECURSIVE — meaning, recursively NEST one folder inside another...)
-
+animals/	foo/	food/
 
 ==========
 18. Type:
@@ -272,10 +209,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-/Users/louisgoldford2020/mtec1003/foo/bar/baz/qux
-
-
-
+/c/Users/beste/mtec1003/foo/bar/baz/qux
 
 
 ==========
@@ -286,10 +220,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
-
-
-
+/c/Users/beste/mtec1003/foo/bar
 
 
 ==========
@@ -300,10 +231,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
-
-
-
+/c/Users/beste/mtec1003/foo/bar/baz/qux
 
 
 ==========
@@ -314,10 +242,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
-
-
-
+/c/Users/beste/mtec1003
 
 
 ==========
@@ -329,10 +254,9 @@ $ ls -l
 
 Copy and paste the first 3 lines from the output into the space below.
 ----------
-
-
-
-
+total 0
+drwxr-xr-x 1 beste 197609 0 Sep 14 00:06 foo/
+drwxr-xr-x 1 beste 197609 0 Sep 14 00:05 food/
 
 
 ==========
@@ -343,10 +267,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
-
-
-
+/c/Users/beste
 
 
 ==========
@@ -357,11 +278,8 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
-
-
-
-
+bash: cd: /Volumes: No such file or directory
+/c/Users/beste
 
 ==========
 25. Type:
@@ -371,25 +289,18 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
-
-
-
-
+bash: cd: /unkown_folder: No such file or directory
+/c/Users/beste
 
 ==========
 26. Type:
 
-$ cd ~/mtec1002
+$ cd ~/mtec1003
 $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
-
-
-
-
+/c/Users/beste/mtec1003
 
 ==========
 27. Type:
@@ -398,25 +309,18 @@ $ hostname
 
 Copy and paste the output into the space below.
 ----------
-
-
-
-
+DESKTOP-QU4JMA1
 
 
 ==========
-28. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
+28. Make sure you're back in your mtec1003, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
-
-
-
-
-
+$ pwd
 
 ==========
 29. If you're not in the right directory, type the following command:
 
-cd ~/mtec1002
+cd ~/mtec1003
 
 Otherwise skip this question/step!
 ----------
@@ -438,10 +342,7 @@ lemon
 
 Write the one command you used below:
 ----------
-
-
-
-
+$ mkdir -p lemon/strawberry/orange/pineapple
 
 
 ==========
@@ -449,10 +350,8 @@ Write the one command you used below:
 
 Write the command you used to create the directory below:
 ----------
-
-
-
-
+$ mkdir aardbark
+//Note : accidentally typed aardbark, I kinda like it, it stays
 
 
 ==========
@@ -460,10 +359,7 @@ Write the command you used to create the directory below:
 
 What is the modified date of the aardvark directory?
 ----------
-
-
-
-
+0 Sep 14 00:33
 
 
 ==========
@@ -475,10 +371,7 @@ What is the modified date of the aardvark directory?
 
 What command did you use?
 ----------
-
-
-
-
+$ mkdir -p foo/bar/baz
 
 
 ==========
@@ -486,10 +379,7 @@ What command did you use?
 
 What command did you use?
 ----------
-
-
-
-
+$ cd foo/bar/baz
 
 
 ==========
@@ -497,7 +387,7 @@ What command did you use?
 
 What command did you use?
 ----------
-
+cd ../..
 
 
 
@@ -506,57 +396,41 @@ What command did you use?
 ==========
 36. What command is used to delete empty directories?
 ----------
-
-
-
-
+$ rmdir
 
 
 ==========
 37. What command is used to print out your current working directory?
 ----------
-
-
-
-
-
+$ pwd
 
 ==========
 38. What flag do I pass to ls to print out all files?
 ----------
-
-
-
-
-
+-a
+//Note : If you meant including hidden ones, if not it is -l)
 
 ==========
 39. What's the shortcut for home directory?
 ----------
-
-
-
-
+cd ~
 
 
 ==========
 40. What's a pathname?
 ----------
-
-
-
-
+The general form of the name of a file or directory;
+it specifies a unique location in a file system.
 
 
 ==========
 41. What is a directory?
 ----------
-
-
-
-
-
+It is a cataloging structure on a file system that references other files (and directories)
+Essentially a thing that contains files
 
 ==========
 42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+/Users/beste/Downloads
+absolute path expresses the path starting from the root.
