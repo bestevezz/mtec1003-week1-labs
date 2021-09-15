@@ -438,3 +438,4 @@ $ ls
  ntuser.ini
  stuff/
  stuff.tar.gz
+ test/
